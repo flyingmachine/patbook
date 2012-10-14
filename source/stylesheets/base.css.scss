@@ -54,6 +54,7 @@ h1, h2 {
 
 h1 {
   @include adjust-font-size-to(48px);
+  @include trailer(1, 48px);
 }
 
 h2 {

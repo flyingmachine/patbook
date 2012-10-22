@@ -61,6 +61,12 @@ h2 {
   @include adjust-font-size-to(36px);
 }
 
+#teaser {
+  @include padding-trailer;
+}
+
+
+
 p {
   @include trailer;
 }
@@ -82,6 +88,16 @@ blockquote {
   }
 }
 
+
+.diagram {
+  @include trailer;
+  text-align:center;
+  .caption {
+    font-style: italic;
+    
+  }
+}
+  
 
 .title {
   @include leader(1, 60px);

@@ -149,3 +149,8 @@ blockquote {
   @include leader;
   background: white;
 }
+
+#mugshot {
+  float: right;
+  margin-right: 1em;
+}

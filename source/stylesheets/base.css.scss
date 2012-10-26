@@ -182,3 +182,21 @@ blockquote {
     }
   }
 }
+
+
+#toc {
+  width: 100%;
+  @include trailer;
+  td {
+    text-indent: 1em;
+    border-bottom:1px dotted #ccc;
+  }
+  .main {
+    text-indent: 0;
+    font-weight: bold;
+  }
+
+  tr:last-child td {
+    border-bottom:none;
+  }
+}

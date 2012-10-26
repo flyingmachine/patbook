@@ -63,21 +63,137 @@ title: Welcome to Middleman
       %cite
         Parker Selbert
 
+  %h2 (An Overview Of) The Whole Enchilada
+  %p Below is the Table of Contents. You'll probably learn a few things just by reading it. You'll learn even more by reading the book - go ahead and <a href="">buy it</a>!
+
+  %table#toc
+    %tr
+      %td.main 1. Tokenization, Parsing and Compilation
+      %td 10
+    %tr
+      %td Tokens: the words that make up the Ruby language
+      %td 11
+    %tr
+      %td Parsing: how Ruby understands the code you write
+      %td 19
+    %tr
+      %td Compilation: how Ruby translates your code into a new language
+      %td 36
+    %tr
+      %td
+        Tokenization, parsing and compilation in JRuby
+      %td 55
+    %tr
+      %td
+        Tokenization, parsing and compilation in Rubinius
+      %td 59
+    %tr
+      %td.main 2. How Ruby Executes Your Code
+      %td 65
+    %tr
+      %td
+        YARV’s internal stack and your Ruby stack
+      %td 66
+    %tr
+      %td
+        Local and dynamic access of Ruby variables
+      %td 78
+    %tr
+      %td
+        How YARV controls your program’s execution flow
+      %td 90
+    %tr
+      %td
+        How JRuby executes your code
+      %td 100
+    %tr
+      %td
+        How Rubinius executes your code
+      %td 104
+    %tr
+      %td.main 3. Objects, Classes and Modules
+      %td 109
+    %tr
+      %td
+        What’s inside a Ruby object?
+      %td 110
+    %tr
+      %td
+        Deducing what’s inside the RClass structure
+      %td 119
+    %tr
+      %td
+        How Ruby implements modules and method lookup
+      %td 132
+    %tr
+      %td
+        Objects, classes and modules in JRuby
+      %td 144
+    %tr
+      %td
+        Objects, classes and modules in Rubinius
+      %td 148
+    %tr
+      %td.main 4. Hash Tables
+      %td 152
+    %tr
+      %td
+        Hash tables in Ruby
+      %td 154
+    %tr
+      %td
+        How hash tables expand to accommodate more values
+      %td 161
+    %tr
+      %td
+        How Ruby implements hash functions
+      %td 169
+    %tr
+      %td
+        Hash tables in JRuby
+      %td 178
+    %tr
+      %td
+        Hash tables in Rubinius
+      %td 180
+    %tr
+      %td.main 5. How Ruby borrowed a decades old idea from Lisp
+      %td 183
+    %tr
+      %td
+        Blocks: Closures in Ruby
+      %td 184
+    %tr
+      %td
+        Lambdas and Procs: treating functions as a first class citizen
+      %td 195
+    %tr
+      %td
+        Metaprogramming and closures: eval, instance_eval and binding
+      %td 213
+    %tr
+      %td
+        Closures in JRuby
+      %td 226
+    %tr
+      %td
+        Closures in Rubinius
+      %td 229
+
+
+  %h2 Buy Now for $18 and $2 Goes to Charity
+  %p Are you ready to educate your brain with Ruby science? Then <a href = "">Buy Ruby Under a Microscope now for only $18</a>.
+  %p And guess what - with every purchase, Pat will donate $2 to charity!
+
   %h2 About Pat
 
   #mugshot
     %img{:src => "/images/pat2.jpeg"}
     
   %p
-    %a{:href => "http://www.patshauhnessy.net"}Pat Shaughnessy
-    is a prolific Ruby programmer, author, and interviewer. He works with Rails professionally and writes for
-    = succeed "." do
-      %a{:href => "http://rubysource.com/author/pshaughnessy/"}RubySource.com
-    You can also find him on <a href="http://twitter.com/patshaughnessy">twitter</a>.
+    Pat Shaughnessy writes a blog about Ruby development <a href="http://patshaughnessy.net">patshaughnessy.net</a> and is working on an eBook titled Ruby Under a Microscope.
 
-  %p Pat has two awesome kids and a wife from Spain. Aye, carumba!
-  %p Pat knows his pointers and his pointers to pointers. He also knows PHP, but he's trying very hard to bury that part of his past.
-  %p Another thing about Pat - he's given a bunch of talks, and they've all been good. If you need to give a talk, don't give one on the same night as Pat unless you like being shown up.
+  %p When he's not at the keyboard, Pat enjoys spending time with his wife and two kids. Pat is also a fluent Spanish speaker and travels frequently to Spain to visit his wife's family.
 
   #book-comments
   #disqus_thread

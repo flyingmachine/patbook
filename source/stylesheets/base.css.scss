@@ -78,7 +78,7 @@ strong {
 blockquote {
   background: #ebf2ec;
   border-left: $gutter-width solid #aec9b2;
-  padding-left: $gutter-width;
+  padding: 0 $gutter-width;
   @include serif-family;
   @include trailer;
   @include padding-trailer(.5);

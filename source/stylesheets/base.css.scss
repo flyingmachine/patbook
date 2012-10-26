@@ -200,3 +200,16 @@ blockquote {
     border-bottom:none;
   }
 }
+
+#buy-now a {
+  display:block;
+  background: $red;
+  color: white;
+  @include adjust-font-size-to(30px);
+  @include trailer(1, 30px);
+  @include padding-leader(.5, 30px);
+  @include padding-trailer(.5, 30px);
+  text-align: center;
+  text-decoration: none;
+  @include border-radius(100px);
+}

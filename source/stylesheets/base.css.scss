@@ -188,8 +188,13 @@ blockquote {
   width: 100%;
   @include trailer;
   td {
-    text-indent: 1em;
     border-bottom:1px dotted #ccc;
+    &:first-child {
+      text-indent: 1em;
+    }
+    &:last-child {
+      text-align: right;
+    }
   }
   .main {
     text-indent: 0;

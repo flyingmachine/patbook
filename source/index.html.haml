@@ -1,8 +1,17 @@
 ---
 title: Welcome to Middleman
 ---
+#banner
+  .content
+    %a{:href => "/"}
+      %span.author Pat Shaughnessy
+      %span.about blogger, rubyist, aspiring author
 
-.page 
+.page
+  #book-tweet
+    %a{:href => "https://twitter.com/share", :class=> "twitter-share-button", "data-count" => "horizontal", "data-via" => "pat_shaughnessy", "data-text" => "Ruby Under a Microscope"}Tweet
+  %script{:src => "//platform.twitter.com/widgets.js", :type => "text/javascript"}
+    
   %h1 Ruby Under a Microscope
 
   #teaser
@@ -69,3 +78,12 @@ title: Welcome to Middleman
   %p Pat has two awesome kids and a wife from Spain. Aye, carumba!
   %p Pat knows his pointers and his pointers to pointers. He also knows PHP, but he's trying very hard to bury that part of his past.
   %p Another thing about Pat - he's given a bunch of talks, and they've all been good. If you need to give a talk, don't give one on the same night as Pat unless you like being shown up.
+
+  #book-comments
+  #disqus_thread
+    :javascript
+      var disqus_identifier = 'http://patshaughnessy.net/ruby-under-a-microscope';
+      var disqus_shortname = '<%= @config[:disqus] %>';
+    %script{:src => "http://disqus.com/forums/<%= @config[:disqus] %>/embed.js", :type => "text/javascript"}
+    %noscript
+      %a{:href => "http://<%= @config[:disqus] %>.disqus.com/?url=ref"} View the discussion thread.

@@ -154,3 +154,31 @@ blockquote {
   float: right;
   margin-left: 1em;
 }
+
+#book-tweet {
+  float: right;
+  @include leader(1.5);
+}
+
+#banner {
+  width: 100%;
+  background: $red;
+  color: white;
+  .content {
+    @include padding-leader(.5);
+    @include padding-trailer(.5);
+    @include container;
+
+    a {
+      color:white;
+      text-decoration: none;
+    }
+    
+    .author {
+      @include adjust-font-size-to(18px);
+    }
+    .about {
+      @include adjust-font-size-to(10px);
+    }
+  }
+}

@@ -218,3 +218,15 @@ blockquote {
   text-decoration: none;
   @include border-radius(100px);
 }
+
+#credits {
+  @include trailer;
+  
+  @include container;
+  color: #91927c;
+
+  a {
+    color:#787967;
+    text-decoration:none;
+  }
+}

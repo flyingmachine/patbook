@@ -76,15 +76,31 @@ strong {
 }
 
 blockquote {
-  background: #ebf2ec;
-  border-left: $gutter-width solid #aec9b2;
-  padding: 0 $gutter-width;
   @include serif-family;
   @include trailer;
-  @include padding-trailer(.5);
-  @include padding-leader(.5);
+  @include clearfix;
   cite {
     font-style: italic;
+  }
+
+  .pic {
+    float: left;
+    background: white;
+    border-left: 1px solid #ebf2ec;
+    border-bottom: 1px solid #ebf2ec;
+    padding: 1em;
+    height: 48px;
+    margin-top:6px;
+    @include border-radius(3px); 
+  }
+
+  .content {
+    background: #ebf2ec;
+    padding: 0 1em;
+    @include padding-trailer(.5);
+    @include padding-leader(.5);
+    margin-left:(72px);
+    @include border-radius(3px); 
   }
 }
 

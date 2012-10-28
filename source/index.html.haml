@@ -75,7 +75,7 @@ title: Ruby Under a Microscope - Pat Shaughnessy
         %cite
           Santiago Pastorino (<a href="https://twitter.com/spastorino">@spastorino</a>)
 
-  %h2 (An Overview Of) The Whole Enchilada
+  %h2 (An Overview Of) The Whole Thing
   %p Below is the Table of Contents. You'll probably learn a few things just by reading it. You'll learn even more by reading the book - go ahead and <a href="">buy it</a>!
 
   %p Still not convinced? Pat has posted one section of each of these chapters for free on his blog already. The free sections are linked below:
@@ -197,11 +197,17 @@ title: Ruby Under a Microscope - Pat Shaughnessy
 
 
   %h2 Buy Now for $20 and $2 Goes to Charity
-  %p Are you ready to educate your brain with Ruby science? Then <a href = "">Buy Ruby Under a Microscope now for only $20</a>.
-  %p And guess what - with every purchase, Pat will donate $2 to charity!
+  %p
+    Are you ready to educate your brain with Ruby science? Then <a href =
+    "http://gum.co/iDhR">Buy Ruby Under a Microscope now for only $20</a>.
+  %p
+    And guess what - with every purchase, Pat will donate $2 to charity!
+    ($1 to <a href="http://giving.childrenshospital.org">Boston Children's
+    Hospital</a> and another $1 to the <a href="http://saintrock.org">Saint
+    Rock Haiti Foundation</a>)
 
   #buy-now
-    <a href="">Take Me to the Purchase Page Already!</a>
+    <a href="http://gum.co/iDhR">Take Me to the Purchase Page Already!</a>
 
   %h2 About Pat
 
@@ -209,18 +215,33 @@ title: Ruby Under a Microscope - Pat Shaughnessy
     %img{:src => "/images/pat2.jpeg"}
     
   %p
-    Pat Shaughnessy writes a blog about Ruby development <a href="http://patshaughnessy.net">patshaughnessy.net</a> and is working on an eBook titled Ruby Under a Microscope.
+    Pat Shaughnessy writes a blog about Ruby development here on this web site,
+    <a href="http://patshaughnessy.net">patshaughnessy.net</a>. Pat's articles
+    and presentations have been featured multiple times on the Ruby Weekly
+    newsletter, the Ruby5 podcast and the Ruby Show. 
 
-  %p When he's not at the keyboard, Pat enjoys spending time with his wife and two kids. Pat is also a fluent Spanish speaker and travels frequently to Spain to visit his wife's family.
+  %p
+    When he's not at the keyboard, Pat enjoys spending time with his wife and
+    two kids. Pat is also a fluent Spanish speaker and travels frequently to
+    Spain to visit his wife's family.
 
   #book-comments
   #disqus_thread
     :javascript
       var disqus_identifier = 'http://patshaughnessy.net/ruby-under-a-microscope';
-      var disqus_shortname = '<%= @config[:disqus] %>';
-    %script{:src => "http://disqus.com/forums/<%= @config[:disqus] %>/embed.js", :type => "text/javascript"}
+      var disqus_shortname = 'patshaughnessy';
+    %script{:src => "http://disqus.com/forums/patshaughnessy/embed.js", :type => "text/javascript"}
     %noscript
-      %a{:href => "http://<%= @config[:disqus] %>.disqus.com/?url=ref"} View the discussion thread.
+      %a{:href => "http://patshaughnessy.disqus.com/?url=ref"} View the discussion thread.
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    :javascript
+      try {
+      var pageTracker = _gat._getTracker("UA-5273122-4");
+      pageTracker._trackPageview();
+      } catch(err) {}
+      
 
 
 #credits

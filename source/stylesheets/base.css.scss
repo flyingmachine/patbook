@@ -54,7 +54,25 @@ h1, h2 {
 
 h1 {
   @include adjust-font-size-to(48px);
-  @include trailer(1, 48px);
+  @include trailer(0);
+}
+
+.subtitle {
+  font-style: italic;
+  color: $red;
+  @include trailer(1);
+}
+
+.top-buy-now {
+  float:right;
+  display:block;
+  background: $red;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  padding: 0 .5em;
+  @include border-radius(1em);
 }
 
 h2 {

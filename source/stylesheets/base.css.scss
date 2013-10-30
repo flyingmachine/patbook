@@ -18,7 +18,9 @@ $base-line-height: 24px;
 $total-columns: 9;
 
 $red: #800;
-$yellow: #F8F9D3;
+$bg-color: #9dc6e7;
+$highlight: #ebf2ec;
+$quote: #e8f2a5;
 
 // Fonts --------------------------------------------------------------
 @mixin sans-family {
@@ -43,7 +45,7 @@ $yellow: #F8F9D3;
 }
 
 body {
-  background: #F8F9D3;
+  background: $bg-color;
   color: #444;
   @include sans-family;
 }
@@ -90,7 +92,7 @@ p {
 }
 
 strong {
-  background: $yellow;
+  background: $quote;
 }
 
 blockquote {
@@ -104,8 +106,8 @@ blockquote {
   .pic {
     float: left;
     background: white;
-    border-left: 1px solid #ebf2ec;
-    border-bottom: 1px solid #ebf2ec;
+    border-left: 1px solid $quote;
+    border-bottom: 1px solid $quote;
     padding: 1em;
     height: 48px;
     margin-top:6px;
@@ -113,7 +115,7 @@ blockquote {
   }
 
   .content {
-    background: #ebf2ec;
+    background: $quote;
     padding: 0 1em;
     @include padding-trailer(.5);
     @include padding-leader(.5);

@@ -6,28 +6,24 @@ title: Ruby Under a Microscope - Pat Shaughnessy
     %a{:href => "/"}
       %span.author Pat Shaughnessy
       %span.about blogger, rubyist, aspiring author
-
+    #book-tweet
+      %a{:href => "https://twitter.com/share", :class=> "twitter-share-button", "data-count" => "horizontal", "data-via" => "pat_shaughnessy", "data-text" => "Ruby Under a Microscope"}Tweet
+    %script{:src => "//platform.twitter.com/widgets.js", :type => "text/javascript"}
 .page
-  #book-tweet
-    %a{:href => "https://twitter.com/share", :class=> "twitter-share-button", "data-count" => "horizontal", "data-via" => "pat_shaughnessy", "data-text" => "Ruby Under a Microscope"}Tweet
-  %script{:src => "//platform.twitter.com/widgets.js", :type => "text/javascript"}
-    
-  %h1 Ruby Under a Microscope
-  %a.top-buy-now{:href => "http://gum.co/iDDV"}Buy Now
-  .subtitle Learning Ruby Internals Through Experiment
+  #book
+    %img{:src => "/images/RUM_coverfront.png"}
+
+    %a.top-buy-now{:href => "http://gum.co/iDDV"}Buy Now
+
+  .intro
+    %h2 Have You Ever Wondered How Ruby Works Internally?
+
+    %p Everyone knows that Ruby is a powerful language. Its dynamic nature allows you to concisely write the code you need to actually solve a problem instead of burying yourself under mountains of boilerplate. You don't have to fight it; you just get to enjoy the ride.
+
+    %p But how is the magic created? And can you trust it? After all, MRI is written in C - a statically typed, compiled language which is pretty much the antithesis of Ruby. What <strong>dark voodoo</strong> is breathed into C to enable Ruby's features - closures, metaprogramming, and so much more?
+
+  %h2.postintro Find out with Science!
   
-
-  #teaser
-    %img{:src => "/images/whatvoodoo.png"}
-
-  %h2 Have You Ever Wondered How Ruby Works Internally?
-  
-  %p Everyone knows that Ruby is a powerful language. Its dynamic nature allows you to concisely write the code you need to actually solve a problem instead of burying yourself under mountains of boilerplate. You don't have to fight it; you just get to enjoy the ride.
-
-  %p But how is the magic created? And can you trust it? After all, MRI is written in C - a statically typed, compiled language which is pretty much the antithesis of Ruby. What <strong>dark voodoo</strong> is breathed into C to enable Ruby's features - closures, metaprogramming, and so much more?
-  
-  %h2 Find out with Science!
-
   %p Ruby Under a Microscope will guide you through the internals of some of Ruby's most-used facets. Using experimentation, theory, and two truckloads of diagrams, you'll <strong>clearly see how Ruby is implemented</strong>.
 
   .diagram

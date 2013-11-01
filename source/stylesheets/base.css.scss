@@ -17,9 +17,10 @@ $base-line-height: 24px;
 
 $total-columns: 9;
 
-$red: #800;
-$bg-color: #9dc6e7;
-$highlight: #ebf2ec;
+$main-color: #de4620;
+$offset-color: #52a9e6;
+$bg-color: #f8f9e6;
+$highlight: #e8f19b;
 $quote: #e8f2a5;
 
 // Fonts --------------------------------------------------------------
@@ -51,7 +52,7 @@ body {
 }
 
 h1, h2 {
-  color: $red;
+  color: $main-color;
 }
 
 h1 {
@@ -61,31 +62,38 @@ h1 {
 
 .subtitle {
   font-style: italic;
-  color: $red;
+  color: $main-color;
   @include trailer(1);
 }
 
 .top-buy-now {
-  float:right;
-  display:block;
-  background: $red;
+  background: $offset-color;
   color: white;
-
-  text-align: center;
   text-decoration: none;
-  padding: 0 .5em;
+  padding: 0.25em.5em;
   @include border-radius(1em);
 }
 
 h2 {
-  @include adjust-font-size-to(36px);
+  @include adjust-font-size-to(27px);
 }
 
-#teaser {
-  @include padding-trailer;
+#book {
+  @include span-columns(3 omega, 9);
+  text-align: center;
+  img {
+    width: 100%;
+    @include leader(1);
+  }
 }
 
+.intro {
+  @include span-columns(6, 9);
+}
 
+.postintro {
+  clear: both;
+}
 
 p {
   @include trailer;
@@ -183,6 +191,7 @@ blockquote {
   @include container;
   @include trailer;
   @include leader;
+  @include padding-leader;
   background: white;
 }
 
@@ -193,12 +202,13 @@ blockquote {
 
 #book-tweet {
   float: right;
-  @include leader(1.5);
+  position: relative;
+  top: 3px;
 }
 
 #banner {
   width: 100%;
-  background: $red;
+  background: #ec8f78; //$offset-color;
   color: white;
   .content {
     @include padding-leader(.5);
@@ -244,7 +254,7 @@ blockquote {
 
 #buy-now a {
   display:block;
-  background: $red;
+  background: $main-color;
   color: white;
   @include adjust-font-size-to(30px);
   @include trailer(1, 30px);
